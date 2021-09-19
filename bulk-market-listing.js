@@ -9,7 +9,7 @@
       TLDName: 'tld-2',
       price: 2000,
     },
-  ];
+  ].filter(t=>t.price);
   for (let n of tlds) {
     let resp = await fetch(
       'https://www.namebase.io/api/v0/marketplace/' + n.name + '/list',
