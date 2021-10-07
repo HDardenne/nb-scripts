@@ -22,7 +22,7 @@
       keepGoing = false;
     }
   }
-  for (let d of all) {
+  for (let d of all.filter(d => d.isUnseen)) {
     await fetch('https://www.namebase.io/api/v0/offers/view', {
       credentials: 'include',
       headers: {
@@ -34,4 +34,5 @@
       mode: 'cors',
     });
   }
+  alert('view-all-offers done')
 })();
