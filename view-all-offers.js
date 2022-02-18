@@ -34,5 +34,24 @@
       mode: 'cors',
     });
   }
-  alert('view-all-offers done')
+
+  await fetch('https://www.namebase.io/api/v0/offers/inbox/received', {
+    credentials: 'include',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    method: 'GET',
+    mode: 'cors',
+  })
+    .then(a => a.json())
+    .then(a =>
+      localStorage.setItem(
+        'namebase:dashboard:activeOffers:bids:hidden',
+        JSON.stringify(
+          a.inbox.reduce((prev, next) => prev.concat(next.offers), [])
+        )
+      )
+    );
+  alert('view-all-offers done');
 })();
