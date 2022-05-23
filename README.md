@@ -7,5 +7,6 @@ You will need to be in a browser tab pointing to Namebase to use those scripts :
 Available scripts :
 - [list all owned TLD](./list-tlds.js) (bookmark version [here](./list-tlds-fav.js))
 - [list many TLDs on the marketplace](./bulk-market-listing.js)
+- [remove many TLDs from the marketplace (unlist)](./bulk-market-unlisting.js)
 - [create X new HNS addresses](./create-HNS-addresses.js) (bookmark version [here](./create-HNS-addresses-fav.js))
 - [remove the "new offer pending" for every names](./view-all-offers.js) (bookmark version [here](./view-all-offers-fav.js))
