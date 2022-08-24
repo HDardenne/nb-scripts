@@ -5,8 +5,13 @@ You will need to be in a browser tab pointing to Namebase to use most of those s
 - Bookmark versions need to be used as bookmark URLs (also known as bookmarklet)
 - NodeJS scripts need NodeJS installed
 
-Available scripts :
+# Disclaimer
+
+Scripts are provided as-is, may or may not work, with no guarantee of any kind. By using them, you and only are responsible for whatever may happen, not me. Use them at your own risks. 
+
+# Available scripts
 - [list all owned TLD](./list-tlds.js) (bookmark version [here](./list-tlds-fav.js))
+- [make an offer on multiple names](./bulk-make-offer.js) (bookmark version [here](./bulk-make-offer-fav.js))
 - [list many TLDs on the marketplace](./bulk-market-listing.js)
 - [remove many TLDs from the marketplace (unlist)](./bulk-market-unlisting.js)
 - [create X new HNS addresses](./create-HNS-addresses.js) (bookmark version [here](./create-HNS-addresses-fav.js))
