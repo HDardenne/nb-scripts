@@ -17,4 +17,7 @@ Scripts are provided as-is, may or may not work, with no guarantee of any kind. 
 - [create X new HNS addresses](./create-HNS-addresses.js) (bookmark version [here](./create-HNS-addresses-fav.js))
 - [remove the "new offer pending" for every names](./view-all-offers.js) (bookmark version [here](./view-all-offers-fav.js))
 - [compute the price of each won name based on your history CSV file](./name-auction-prices.js), need to run it locally with NodeJS
-- [check if names are on Namebase, for sale and how much, and if they allow offers](./name-state-on-NB.js), need to run it locally with NodeJS and need a ```npm install node-fetch@2``` to install the dependancy
+- [check if names are on Namebase, for sale and how much, and if they allow offers](./name-state-on-NB.js) need to run it locally with NodeJS & node-fetch@2
+- [get the last time a name was registered/renewed, ordered to have the names expiring soon first](./verify-expire.js) need to run it locally with NodeJS & node-fetch@2
+
+(```npm install node-fetch@2``` to install node-fetch@2)
