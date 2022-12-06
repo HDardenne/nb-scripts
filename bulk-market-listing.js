@@ -1,13 +1,14 @@
 (async function () {
-  const description = 'my generic description';
   const tlds = [
     {
       name: 'tld-1',
       price: 1000,
+	    description: 'tld-1 is the perfect name for blah blah blah flexing'
     },
     {
       TLDName: 'tld-2',
       price: 2000,
+      description: 'tld-2 - a great handshake name blah blah blah brochure text here'
     },
   ].filter(t=>t.price);
   for (let n of tlds) {
@@ -24,7 +25,7 @@
           '{"amount":"' +
           n.price +
           '","asset":"HNS","description":"' +
-          description +
+          n.description +
           '"}',
         method: 'POST',
         mode: 'cors',
