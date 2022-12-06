@@ -1,5 +1,6 @@
 (async function () {
-  const description = 'my generic description';
+  // Default description used if there isn't one set for the TLD
+  const defaultDescription = "Contact XYZ for more details"
   const tlds = [
     {
       name: 'tld-1',
@@ -8,6 +9,12 @@
     {
       TLDName: 'tld-2',
       price: 2000,
+      description: 'tld-2 - a great handshake name ...'
+    },
+    {
+      TLDName: 'tld-3',
+      price: 5000,
+      description: 'tld-3 is the perfect name for ...'
     },
   ].filter(t=>t.price);
   for (let n of tlds) {
@@ -24,7 +31,7 @@
           '{"amount":"' +
           n.price +
           '","asset":"HNS","description":"' +
-          description +
+          (n.description ?? defaultDescription) +
           '"}',
         method: 'POST',
         mode: 'cors',
